@@ -31,9 +31,9 @@ public class TeacherDAO {
 			//Driver mysqldriver = new Driver();
 			//DriverManager.registerDriver(mysqldriver);
 			try {
-				Driver mysqldriver = new Driver();
-				DriverManager.registerDriver(mysqldriver);
-				//Class.forName("com.mysql.cj.jdbc.Driver");
+				//Driver mysqldriver = new Driver();
+				//DriverManager.registerDriver(mysqldriver);
+				Class.forName("com.mysql.cj.jdbc.Driver");
 				conn = DriverManager.getConnection(url,userName,password);
 			} 			
 							
